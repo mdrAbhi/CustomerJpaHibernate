@@ -1,12 +1,10 @@
-create database mazon_music_db;
+create database amazon_music_db;
 
-use mazon_music_db;
+use amazon_music_db;
 
 
 create table customers(
 id bigint(20) not null auto_increment,
-username varchar (20),
-password varchar (20),
 name varchar (20),
 address varchar (20),
 primary key (id)

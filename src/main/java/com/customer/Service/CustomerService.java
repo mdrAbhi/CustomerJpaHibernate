@@ -27,14 +27,13 @@ public class CustomerService {
 	public void createCustomer(customerDto customerDto) {
 		CustomerEntity customerEntity = new CustomerEntity();
 		customerEntity.setName(customerDto.getName());
-		customerEntity.setUsername(customerDto.getUsername());
-		customerEntity.setPassword(customerDto.getPassword());
+		//customerEntity.setUsername(customerDto.getUsername());
+		//customerEntity.setPassword(customerDto.getPassword());
 		customerEntity.setEmail(customerDto.getEmail());
 		customerEntity.setPhone(customerDto.getPhone());
 		customerEntity.setAddress(customerDto.getAddress());
 		customerEntity.setCreatedAt(customerDto.getCreatedAt());
-		
-		
+				
 		
 		CLoginEntity cEntity = new CLoginEntity();
 		cEntity.setUsername(customerDto.getUsername());
@@ -50,8 +49,8 @@ public class CustomerService {
 		customerDto customerDto = new customerDto();
 		CustomerEntity customerEntity = (CustomerEntity) customerRepo.getById(id);
 		customerDto.setName(customerEntity.getName());
-		customerDto.setUsername(customerEntity.getUsername());
-		customerDto.setPassword(customerEntity.getPassword());
+		//customerDto.setUsername(customerEntity.getUsername());
+		//customerDto.setPassword(customerEntity.getPassword());
 		customerDto.setEmail(customerEntity.getEmail());
 		customerDto.setPhone(customerEntity.getPhone());
 		customerDto.setAddress(customerEntity.getAddress());

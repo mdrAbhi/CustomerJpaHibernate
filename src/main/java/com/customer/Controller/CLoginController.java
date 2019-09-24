@@ -12,9 +12,5 @@ import com.customer.Repository.CLoginRepo;
 @RequestMapping(value = "/login")
 public class CLoginController {
 
-	@Autowired
-	private CLoginRepo cRepo;
 	
-	@RequestMapping(value = "", method =  RequestMethod.GET)
-	public CLoginDto login()
 }
