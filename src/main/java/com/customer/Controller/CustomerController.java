@@ -34,13 +34,4 @@ public class CustomerController {
 		return customerService.getCustomer(customerId);
 	}
 
-//	// http://localhost:8000/amazonmusic/artist/20/detail
-//
-//	@RequestMapping(value = "/20/detail", method = RequestMethod.GET)
-//	public ArtistDto getArtistFromId(@PathVariable(value = "id") Long artistId,
-//	@RequestHeader(value = "auth-token") String authToken) {
-//		System.out.println("auth token : " + authToken);
-//		return artistService.getArtist(artistId);
-//	}
-
 }
