@@ -1,13 +1,13 @@
-create database Something;
+create database mazon_music_db;
 
-use Something;
+use mazon_music_db;
 
 
-create table customer(
+create table customers(
 id bigint(20) not null auto_increment,
 username varchar (20),
 password varchar (20),
-email varchar (20),
+name varchar (20),
 address varchar (20),
 primary key (id)
 );
